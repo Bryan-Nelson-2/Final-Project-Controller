@@ -1,8 +1,14 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
- * Created by: XXX
- * Created on: Sep 2020
+ * Created by: Bryan
+ * Created on: Jan 2026
  * This program ...
 */
 
-basic.showString('Hello, World!')
+//set radio group
+radio.setGroup(41)
+basic.showString("Control")
+
+input.onButtonPressed(Button.A, function () {
+    radio.sendNumber(1) // 1 = "Button A pressed"
+})
