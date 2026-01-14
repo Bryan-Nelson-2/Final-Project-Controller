@@ -10,5 +10,9 @@ radio.setGroup(41)
 basic.showString("Control")
 
 input.onButtonPressed(Button.A, function () {
-    radio.sendNumber(1) // 1 = "Button A pressed"
+    radio.sendNumber(1)
+})
+
+input.onButtonPressed(Button.B, function () {
+    radio.sendNumber(2) 
 })
